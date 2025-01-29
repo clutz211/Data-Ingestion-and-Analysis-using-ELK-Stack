@@ -1,5 +1,3 @@
-# Data-Ingestion-and-Analysis-using-ELK-Stack
-
 # Elastic Stack Data Ingestion and Analysis
 
 This project demonstrates the implementation of data ingestion and analysis using the Elastic Stack, including metrics collection, log analysis, and application performance monitoring (APM).
