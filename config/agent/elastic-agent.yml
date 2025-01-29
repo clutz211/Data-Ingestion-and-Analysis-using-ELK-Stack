@@ -1,0 +1,15 @@
+elastic-agent:
+  monitoring:
+    enabled: true
+    logs: false  # Disable log collection as specified
+    metrics:
+      system:
+        period: 10s
+        cpu.enabled: true
+        memory.enabled: true
+
+outputs:
+  elasticsearch:
+    hosts: ["${ELASTICSEARCH_HOSTS}"]
+    username: "${ELASTICSEARCH_USERNAME}"
+    password: "${ELASTICSEARCH_PASSWORD}"

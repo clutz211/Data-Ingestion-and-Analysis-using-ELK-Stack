@@ -1,0 +1,42 @@
+{
+  "cpu_alert": {
+    "name": "High CPU Usage Alert",
+    "type": "metric",
+    "schedule": "1m",
+    "conditions": {
+      "when": "max",
+      "of": "system.cpu.system.pct",
+      "over": "1m",
+      "exceeds": 50
+    },
+    "actions": {
+      "email_admin": {
+        "email": {
+          "to": ["admin@example.com"],
+          "subject": "High CPU Usage Alert",
+          "body": "System CPU usage exceeded 50% threshold"
+        }
+      }
+    }
+  },
+  "memory_alert": {
+    "name": "High Memory Usage Alert",
+    "type": "metric",
+    "schedule": "1m",
+    "conditions": {
+      "when": "max",
+      "of": "system.memory.used.pct",
+      "over": "1m",
+      "exceeds": 85
+    },
+    "actions": {
+      "email_admin": {
+        "email": {
+          "to": ["admin@example.com"],
+          "subject": "High Memory Usage Alert",
+          "body": "System memory usage exceeded 85% threshold"
+        }
+      }
+    }
+  }
+}
