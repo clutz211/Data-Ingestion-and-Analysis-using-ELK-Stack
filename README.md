@@ -41,12 +41,10 @@ The project consists of three main components:
 
 ### 2. System Metrics Collection
 
-1. Install Elastic Agent:
-```bash
-# Installation commands for Elastic Agent
-```
+1. Install Elastic Agent
+   - Use the sytsem integration tool on Elastic website 
 
-2. Configure system monitoring:
+3. Configure system monitoring:
    - Location: `config/agent/elastic-agent.yml`
    - Disable log collection as specified
 
