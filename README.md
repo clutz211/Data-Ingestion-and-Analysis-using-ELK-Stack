@@ -83,24 +83,6 @@ Two primary alerts are configured:
    - Threshold: 85% memory usage
    - Duration: 1 minute average
 
-## Directory Structure
-
-```
-.
-├── config/
-│   ├── agent/
-│   │   └── elastic-agent.yml
-│   ├── logstash/
-│   │   ├── apache.conf
-│   │   └── output.conf
-│   └── apm/
-│       └── apm-config.yml
-├── dashboards/
-│   └── apache-dashboard.ndjson
-└── scripts/
-    └── setup.sh
-```
-
 ## Implementation Details
 
 ### Metrics Collection
@@ -125,10 +107,4 @@ The project includes several Kibana dashboards:
 2. Apache log analysis
 3. APM performance metrics
 
-## Contributing
 
-Feel free to submit issues and enhancement requests.
-
-## License
-
-[MIT](LICENSE)
